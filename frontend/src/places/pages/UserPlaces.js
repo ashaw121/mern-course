@@ -9,7 +9,7 @@ const DUMMY_PLACES = [
     title: 'Empire State Building',
     description: 'One of the most famous sky scrapers in the world.',
     imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/500px-Empire_State_Building_%28aerial_view%29.jpg',
+      'https://www.findingtheuniverse.com/wp-content/uploads/2020/07/Empire-State-Building-view-from-uptown_by_Laurence-Norah-2.webp',
     address: '20 W 34th St, New York, NY 10001',
     location: {
       lat: 40.7484405,
@@ -22,7 +22,7 @@ const DUMMY_PLACES = [
     title: 'The White House',
     description: 'Where the president of the U.S. lives.',
     imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/640px-White_House_north_and_south_sides.jpg',
+      'https://www.whitehouse.gov/wp-content/uploads/2021/01/white_house_grounds.jpg?w=700&h=530&crop=1',
     address: '1600 Pennsylvania Ave, Washington, D.C 20500',
     location: {
       lat: 38.8976763,
