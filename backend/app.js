@@ -1,13 +1,18 @@
-const { SlowBuffer } = require('buffer');
-const fs = require('fs');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const userName = 'Austin';
+const app = express();
 
-fs.writeFile('user-data.txt', 'Name: ' + userName, err => {
-  if (err) {
-    console.log(err);
-    return;
-  }
+app.use(bodyParser.urlencoded({ extended: false }));
 
-  console.log('Wrote file');
+app.post('/user', (req, res, next) => {
+  res.send(`<h1>User: ${req.body.username}</h1>`);
 });
+
+app.get('/', (req, res, next) => {
+  res.send(
+    '<form action="/user" method="POST"><input type="text" name="username"/><button type="submit">Create User</button></form>'
+  );
+});
+
+app.listen(5000);
